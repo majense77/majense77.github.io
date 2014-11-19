@@ -1,0 +1,82 @@
+@mixin full($percent) 
+ {
+ 	width: $percent;
+ 	height: $percent;
+ }
+
+@mixin fuller($width, $height) 
+ {
+ 	width: $width;
+ 	height: $height;
+ }
+
+ @mixin move ($x, $y) 
+ {
+ 	-ms-transform: translate($x,$y);
+    -webkit-transform: translate($x,$y);
+    transform: translate($x,$y);
+ }
+
+ html, body {
+ 	@include full(100%);
+ 	font-size: 5rem;
+ }
+
+ #content-container {
+ 	@include full(100%);
+ 	overflow: hidden;
+ }
+
+ #content {
+ 	@include full(200%);
+ 	position: fixed;
+ 	top: 0;
+ 	left: 0;
+ }
+
+ .slide {
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	@include full(50%);
+ }
+
+ #slide1 {
+ 	// background: url('../resources/images/sultryVinod.jpg') no-repeat center center;
+ 	@include move(0,0);
+ 	background-color: red;
+ 	background-size: cover;
+ }
+
+  #slide2 {
+ 	// background: url('../resources/images/sultryVinod.jpg') no-repeat center center;
+ 	@include move(100%,0);
+ 	background-color: yellow;
+ 	background-size: cover;
+ }
+
+  #slide3 {
+ 	// background: url('../resources/images/sultryVinod.jpg') no-repeat center center;
+ 	@include move(0,100%);
+ 	background-color: blue;
+ 	background-size: cover;
+ }
+
+  #slide4 {
+ 	// background: url('../resources/images/sultryVinod.jpg') no-repeat center center;
+ 	@include move(100%,100%);
+ 	background-color: green;
+ 	background-size: cover;
+ }
+
+ #helper 
+ {
+ 	position:absolute;
+ 	left: 0;
+ 	top: 0;
+ 	@include fuller(20px,400%);
+ }
+
+ .marker {
+ 	@include fuller(100%,25%);
+ }
