@@ -51,6 +51,12 @@ html, body {
     transition: opacity 0.2s linear;
     opacity: 0; }
 
+#hudlLogo {
+  position: fixed;
+  top: 15%;
+  left: 55%;
+  width: 30%; }
+
 #slide-0:hover #hidden {
   transition: opacity 0.2s linear;
   opacity: 1; }
@@ -61,4 +67,4 @@ html, body {
   font-size: 2rem;
   font-family: blackoutmidnight;
   top: 15%;
-  left: 15%; }
+  left: 20%; }
