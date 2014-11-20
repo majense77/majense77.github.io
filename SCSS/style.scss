@@ -17,66 +17,123 @@
     transform: translate($x,$y);
  }
 
+ @font-face {
+    font-family: 'blackoutmidnight';
+    src: url('./Blackout/blackout-midnight-webfont.eot');
+    src: url('./Blackout/blackout-midnight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./Blackout/blackout-midnight-webfont.woff2') format('woff2'),
+         url('./Blackout/blackout-midnight-webfont.woff') format('woff'),
+         url('./Blackout/blackout-midnight-webfont.ttf') format('truetype'),
+         url('./Blackout/blackout-midnight-webfont.svg#blackoutmidnight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
  html, body {
  	@include full(100%);
- 	font-size: 5rem;
+ 	padding: 0;
+ 	margin:0;
  }
 
  #content-container {
  	@include full(100%);
- 	overflow: hidden;
  }
 
  #content {
- 	@include full(200%);
+ 	@include full(100%);
  	position: fixed;
- 	top: 0;
- 	left: 0;
+ 	top: 0px;
+ 	left: 0px;
  }
 
- .slide {
- 	position: absolute;
- 	top: 0;
- 	left: 0;
- 	@include full(50%);
+ #bg {
+ 	@include full(100%);
+ 	top: 0px;
+ 	left: 0px;
  }
 
- #slide1 {
- 	// background: url('../resources/images/sultryVinod.jpg') no-repeat center center;
- 	@include move(0,0);
- 	background-color: red;
- 	background-size: cover;
+ // .slide {
+ // 	position: absolute;
+ // 	top: 0;
+ // 	left: 0;
+ // 	@include full(50%);
+ // }
+
+ #slide-0 {
+    position: fixed;
+    font-size: 1.9rem;
+    top: 50%;
+    left: 50%;
+    z-index: 2000;
+    color: rgba(0,0,0,0.7);
+    background-color: rgba(255,255,0,0.2);
+    width: 100px;
+    height: 100px;
+    // line-height: 100px;
+    text-align: center;
+    margin: -50px 0 0 -50px;
+    border-radius: 100%;
+
+    #hidden {
+        display: block;
+        font-size: 1rem;
+        color: rgba(255,255,0,0.2);
+        position: absolute;
+        top: 105%;
+        text-align: center; 
+        // left: 10%;
+        font-family: blackoutmidnight;
+        transition: opacity 0.2s linear;
+        opacity: 0;
+    }
  }
 
-  #slide2 {
- 	// background: url('../resources/images/sultryVinod.jpg') no-repeat center center;
- 	@include move(100%,0);
- 	background-color: yellow;
- 	background-size: cover;
+ #slide-0:hover {
+    #hidden {
+        transition: opacity 0.2s linear;
+        opacity: 1;
+    }
  }
 
-  #slide3 {
- 	// background: url('../resources/images/sultryVinod.jpg') no-repeat center center;
- 	@include move(0,100%);
- 	background-color: blue;
- 	background-size: cover;
+ #slide-1 {
+ 	position: fixed;
+	color: rgba(255,255,0,0.8);
+	font-size:2rem;
+	font-family: blackoutmidnight;
+	top: 15%;
+	left: 15%;
  }
 
-  #slide4 {
- 	// background: url('../resources/images/sultryVinod.jpg') no-repeat center center;
- 	@include move(100%,100%);
- 	background-color: green;
- 	background-size: cover;
- }
+ //  #slide2 {
+ // 	// background: url('../resources/images/sultryVinod.jpg') no-repeat center center;
+ // 	@include move(100%,0);
+ // 	background-color: yellow;
+ // 	background-size: cover;
+ // }
 
- #helper 
- {
- 	position:absolute;
- 	left: 0;
- 	top: 0;
- 	@include fuller(20px,600%);
- }
+ //  #slide3 {
+ // 	// background: url('../resources/images/sultryVinod.jpg') no-repeat center center;
+ // 	@include move(0,100%);
+ // 	background-color: blue;
+ // 	background-size: cover;
+ // }
 
- .marker {
- 	@include fuller(100%,25%);
- }
+ //  #slide4 {
+ // 	// background: url('../resources/images/sultryVinod.jpg') no-repeat center center;
+ // 	@include move(100%,100%);
+ // 	background-color: green;
+ // 	background-size: cover;
+ // }
+
+ // #helper 
+ // {
+ // 	position:absolute;
+ // 	left: 0;
+ // 	top: 0;
+ // 	@include fuller(20px,600%);
+ // }
+
+ // .marker {
+ // 	@include fuller(100%,25%);
+ // }
