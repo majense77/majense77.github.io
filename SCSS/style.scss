@@ -55,13 +55,6 @@ $orange: #f87620;
  	left: 0px;
  }
 
- // .slide {
- // 	position: absolute;
- // 	top: 0;
- // 	left: 0;
- // 	@include full(50%);
- // }
-
  #slide-0 {
     position: fixed;
     font-size: 1.9rem;
@@ -114,35 +107,19 @@ $orange: #f87620;
 	left: 20%;
  }
 
- //  #slide2 {
- // 	// background: url('../resources/images/sultryVinod.jpg') no-repeat center center;
- // 	@include move(100%,0);
- // 	background-color: yellow;
- // 	background-size: cover;
- // }
+ #slide-2 {
+ 	position: fixed;
+    @include full(100%);
+ }
 
- //  #slide3 {
- // 	// background: url('../resources/images/sultryVinod.jpg') no-repeat center center;
- // 	@include move(0,100%);
- // 	background-color: blue;
- // 	background-size: cover;
- // }
+ #stadium {
+    position: fixed;
+    width: 50%;
+    bottom: -5%;
+    right: 0%;
+ }
 
- //  #slide4 {
- // 	// background: url('../resources/images/sultryVinod.jpg') no-repeat center center;
- // 	@include move(100%,100%);
- // 	background-color: green;
- // 	background-size: cover;
- // }
+ .overlay {
+    background: rgba(70, 72, 82, 0.3);
 
- // #helper 
- // {
- // 	position:absolute;
- // 	left: 0;
- // 	top: 0;
- // 	@include fuller(20px,600%);
- // }
-
- // .marker {
- // 	@include fuller(100%,25%);
- // }
+ }
