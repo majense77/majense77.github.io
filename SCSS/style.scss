@@ -308,3 +308,25 @@ $orange: #f87620;
     left: 30%;
     width: 12%;
  }
+
+ #rebranded {
+    position: fixed;
+    font-size: 4rem;
+    font-family: blackoutmidnight;
+    top: 10%;
+    left:5%;
+    z-index: 20;
+    transform: rotate(-30deg);
+    color: #FFF;
+ }
+
+ #year {
+    position: fixed;
+    font-size: 4rem;
+    font-family: blackoutmidnight;
+    top: 10%;
+    right:8%;
+    z-index: 20;
+    transform: rotate(30deg);
+    color: #FFF;
+ }
