@@ -93,6 +93,12 @@ html, body {
   height: 100%;
   color: #3c3c3c; }
 
+#slide-3 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  color: #3c3c3c; }
+
 #stadium {
   position: fixed;
   width: 50%;
@@ -125,6 +131,14 @@ html, body {
     font-size: 4.5rem;
     font-family: trade-condensed; }
 
+#haymarket {
+  position: fixed;
+  font-size: 1.2rem;
+  word-wrap: break-word;
+  width: 50%;
+  top: 20%;
+  left: 5%; }
+
 .cd {
   content: url(../resources/images/cdblue.png);
   position: fixed;
@@ -155,3 +169,18 @@ html, body {
   top: -44%;
   right: 1%;
   z-index: -2; }
+
+#front-building {
+  position: fixed;
+  bottom: 0%;
+  right: -17%; }
+
+#mid-building {
+  position: fixed;
+  bottom: 0%;
+  right: -7%; }
+
+#back-building {
+  position: fixed;
+  bottom: 0%;
+  right: 31%; }
