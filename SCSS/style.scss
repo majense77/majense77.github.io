@@ -133,7 +133,7 @@ $orange: #f87620;
  #slide-1 {
  	position: fixed;
 	color: rgba(255,255,0,0.8);
-	font-size:3rem;
+	font-size:5rem;
 	font-family: blackoutmidnight;
 	top: 15%;
 	left: 20%;
@@ -310,23 +310,25 @@ $orange: #f87620;
  }
 
  #rebranded {
-    position: fixed;
+    position: relative;
     font-size: 4rem;
-    font-family: blackoutmidnight;
-    top: 10%;
-    left:5%;
+    font-family: trade-condensed;
+    top: 5%;
+    width:25%;
+    margin: auto;
+    text-align: center;
     z-index: 20;
-    transform: rotate(-30deg);
     color: #FFF;
  }
 
  #year {
-    position: fixed;
+    position: relative;
     font-size: 4rem;
-    font-family: blackoutmidnight;
+    font-family: trade-condensed;
     top: 10%;
-    right:8%;
+    width: 25%;
+    text-align: center;
+    margin: auto;
     z-index: 20;
-    transform: rotate(30deg);
     color: #FFF;
  }
