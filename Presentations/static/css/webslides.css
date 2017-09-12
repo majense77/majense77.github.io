@@ -3796,3 +3796,7 @@ Slides Index
 
 .text-slide-number {
   color: #abc; }
+
+ #count::before {
+	 content: '2.';
+ }
